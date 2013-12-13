@@ -20,7 +20,7 @@ class EightQueensTest : public CppUnit::TestCase
 			{//Go through each bool element and mark it to false to indicate empty spots.
 				for( int j = 0; j < 8; j++ )
 				{
-					validBoard[i][j] = false;
+					validBoard[j][i] = false;
 				}
 			}
 
