@@ -1,6 +1,6 @@
 #include "EightQueens.h"
 
-namespace EightQueens
+namespace EightQueensProblem
 {
 	bool EightQueensSolver::eightQueens( bool spotTaken[8][8], int numQueensPositioned )
 	{//Does the main line of work by recursively calling itself. spotTaken is an array of bools representing a board (spaces numbered 0...7 in either direction) in which true means a queen is in that spot and false means an empty spot. numQueensPositioned specifies how many queens have already been placed. Returns true if it finds a solution, false if it doesn't.
