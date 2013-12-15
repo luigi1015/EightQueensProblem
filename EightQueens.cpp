@@ -10,6 +10,45 @@ namespace EightQueensProblem
 
 	bool EightQueensSolver::isLegal( bool chessBoard[8][8] )
 	{//Tests the chess board to see if there are any queens in the same row, column or diagonal. chessBoard follows the same design as spotTaken in the eightQueens method. Returns true if no queens are in the same row, column or diagonal or returns false if finds even a single queen in the same row, column or diagonal.
+		int count;//Number of queens encountered in a given row/column/diagonal.
+
+		//Check the rows.
+		for( int i = 0; i < 8; i++ )
+		{
+			count = 0;
+			for( int j = 0; j < 8; j++ )
+			{
+				if( chessBoard[j][i] == true )
+				{//Found a queen.
+					count++;
+				}
+
+				if( count > 1 )
+				{//If more than one queen has been found on this row, the board isn't legal so return false.
+					return false;
+				}
+			}
+		}
+
+		//Check the columns.
+		for( int i = 0; i < 8; i++ )
+		{
+			count = 0;
+			for( int j = 0; j < 8; j++ )
+			{
+				if( chessBoard[i][j] == true )
+				{//Found a queen.
+					count++;
+				}
+
+				if( count > 1 )
+				{//If more than one queen has been found on this column, the board isn't legal so return false.
+					return false;
+				}
+			}
+		}
+
+		//Check the diagonals.
 	}
 
 	static void printBoard( bool chessBoard[8][8] )
