@@ -49,7 +49,9 @@ namespace EightQueensProblem
 		}
 
 		//Check the diagonals.
-		for( int i
+		for( int i = 0; i < 8; i++ )
+		{
+		}
 	}
 
 	static void printBoard( bool chessBoard[8][8] )
