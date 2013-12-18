@@ -51,6 +51,10 @@ namespace EightQueensProblem
 		//Check the diagonals.
 		for( int i = 0; i < 8; i++ )
 		{
+			int j = 0;
+			while( (i < 8) && (j < 8) )
+			{
+			}
 		}
 	}
 
