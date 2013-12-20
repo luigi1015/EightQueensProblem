@@ -55,6 +55,7 @@ namespace EightQueensProblem
 			while( (i < 8) && (j < 8) )
 			{
 				j++;
+				//TO-DO: Work on this diagonals part.
 			}
 		}
 	}
