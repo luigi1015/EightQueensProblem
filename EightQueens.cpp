@@ -54,6 +54,7 @@ namespace EightQueensProblem
 			int j = 0;
 			while( (i < 8) && (j < 8) )
 			{
+				j++;
 			}
 		}
 	}
